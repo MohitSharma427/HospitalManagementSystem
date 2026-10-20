@@ -83,3 +83,43 @@ This project demonstrates Java GUI development, object-oriented programming, dat
 
 ### Billing
 ![Billing](screenshots/billing.png)
+## Setup and Run
+
+### Prerequisites
+- Java JDK 17 or later
+- MySQL Server
+- MySQL Connector/J included in the `lib` folder
+
+### 1. Configure the Database
+Create the `hospital_db` database and required tables in MySQL.
+
+### 2. Set the Database Password
+
+**macOS (Terminal):**
+```bash
+export HOSPITAL_DB_PASSWORD='your_mysql_password'
+```
+
+**Windows PowerShell:**
+```powershell
+$env:HOSPITAL_DB_PASSWORD = "your_mysql_password"
+```
+
+### 3. Compile and Run
+
+**macOS:**
+```bash
+mkdir -p out
+javac -cp "lib/mysql-connector-j-26.7.0.jar" -d out $(find src -type f -name "*.java")
+java -cp "out:lib/mysql-connector-j-26.7.0.jar" gui.DashboardFrame
+```
+
+**Windows PowerShell:**
+```powershell
+New-Item -ItemType Directory -Force out | Out-Null
+$sources = Get-ChildItem src -Recurse -Filter *.java | ForEach-Object { $_.FullName }
+javac -cp "lib/mysql-connector-j-26.7.0.jar" -d out $sources
+java -cp "out;lib/mysql-connector-j-26.7.0.jar" gui.DashboardFrame
+```
+
+**Note:** Replace `your_mysql_password` with your actual MySQL password.
