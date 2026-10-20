@@ -48,15 +48,6 @@ HospitalManagementSystem/
 4. Configure the database connection in `DBConnection.java`.
 5. Add MySQL Connector/J to the Java classpath.
 
-## Running the Project
-
-Compile the Java source files and run the dashboard using the configured Java classpath.
-
-```bash
-javac -cp "lib/mysql-connector-j-26.7.0.jar" -d out $(find src -type f -name "*.java")
-java -cp "out:lib/mysql-connector-j-26.7.0.jar" gui.DashboardFrame
-```
-
 ## Academic Project
 
 This project demonstrates Java GUI development, object-oriented programming, database connectivity using JDBC, and data access through DAO classes.
