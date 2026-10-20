@@ -51,29 +51,6 @@ HospitalManagementSystem/
 ## Academic Project
 
 This project demonstrates Java GUI development, object-oriented programming, database connectivity using JDBC, and data access through DAO classes.
-
-## Screenshots
-
-### Dashboard
-![Dashboard](screenshots/dashboard.png)
-
-### Doctors
-![Doctors](screenshots/doctors.png)
-
-### Patients
-![Patients](screenshots/patients.png)
-
-### Appointments
-![Appointments](screenshots/appointments.png)
-
-### Rooms
-![Rooms](screenshots/rooms.png)
-
-### Room Bookings
-![Room Bookings](screenshots/room-bookings.png)
-
-### Billing
-![Billing](screenshots/billing.png)
 ## Setup and Run
 
 ### Prerequisites
@@ -114,3 +91,26 @@ java -cp "out;lib/mysql-connector-j-26.7.0.jar" gui.DashboardFrame
 ```
 
 **Note:** Replace `your_mysql_password` with your actual MySQL password.
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Doctors
+![Doctors](screenshots/doctors.png)
+
+### Patients
+![Patients](screenshots/patients.png)
+
+### Appointments
+![Appointments](screenshots/appointments.png)
+
+### Rooms
+![Rooms](screenshots/rooms.png)
+
+### Room Bookings
+![Room Bookings](screenshots/room-bookings.png)
+
+### Billing
+![Billing](screenshots/billing.png)
